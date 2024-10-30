@@ -1,5 +1,4 @@
-const projects = require("../data/data.json");
-
-exports.getProjects = (req, res) => {
+import projects from "../data/data.json" assert { type: "json" };
+export const getProjects = (req, res) => {
   res.json(projects);
 };
