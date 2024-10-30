@@ -1,7 +1,7 @@
-const express = require("express");
-const cors = require("cors");
-const projectRoutes = require("./routes/projectRoutes");
-const projectData = require("./data/data.json");
+import express from "express";
+import cors from "cors";
+import projectRoutes from "./routes/projectRoutes.js";
+import projectData from "./data/data.json" assert { type: "json" };
 
 const app = express();
 const PORT = 3000;
